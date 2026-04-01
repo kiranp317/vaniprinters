@@ -24,7 +24,7 @@
     }
 
     .header img {
-      height: 160px;
+      height: 140px;
     }
 
     .top-contact {
@@ -55,24 +55,39 @@
       color: #38bdf8;
     }
 
-    /* HERO */
+    /* HERO IMAGE */
     .hero {
-      height: 70vh;
-      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      height: 80vh;
+      background: url('hero.jpg') no-repeat center center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
       text-align: center;
+      position: relative;
+      color: white;
+    }
+
+    /* DARK OVERLAY */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
     }
 
     .hero h1 {
+      position: relative;
+      z-index: 1;
       font-size: 3rem;
+      padding: 20px;
     }
 
     /* SERVICES */
     .services {
-      padding: 40px;
+      padding: 50px;
       text-align: center;
       background: #f9fafb;
     }
@@ -132,7 +147,7 @@
   <img src="logo.png" alt="Vani Printers Logo">
 
   <div class="top-contact">
-    <p><strong>Vijay Bhaskar.P</strong></p>
+    <p><strong>Bhaskar</strong></p>
     <p>📞 9391496638</p>
   </div>
 </header>
